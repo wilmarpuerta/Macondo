@@ -58,3 +58,6 @@ function mostrarRespuesta() {
     return;    
     }
 
+//Caso 2
+
+
