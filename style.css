@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+}
+.formulario{
+    display: flex;
+    margin-top: 2%;
+    width: 600px;
+}
+
+.miFormulario{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-bottom: 10px;
+}

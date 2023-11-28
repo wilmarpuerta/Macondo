@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Macondo</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <section class="formulario">
+        <form class="miFormulario" id="miFormulario">
+            <div>
+
+                <h1>El viaje de Hildebrando</h1>
+                <p>Hildebrando está alistando todo para poder viajar a Macondo, el sale de trabajar el día
+                    viernes, y tiene un vuelo en la noche, pero el vuelo tiene escala en Medellín. Ese mismo
+                    día le pagan a Hildebrando, a Hildebrando le pagan 2.500.000.<br><br>
+                    día viernes, Hildebrando llega al aeropuerto del dorado, se quiere comprar algo de
+                    comer antes del vuelo, ya que hace escala en Medellín en la madrugada, y llegaría en la
+                    mañana a Cartagena las opciones que tiene Hildebrando:
+                    </p>
+            </div>
+            <h2>Que desea comer Hildebrando en el areopuerto</h2>
+            <label>
+                <input type="radio" name="respuesta" value="opcion1"> comprar una almojábana con gaseosa ($15.000)
+            </label>
+            <label>
+                <input type="radio" name="respuesta" value="opcion2"> comprar un subway con gaseosa ($23.000)
+            </label>
+            <label>
+                <input type="radio" name="respuesta" value="opcion3"> no comprar nada
+            </label>
+        
+            <button type="button" onclick="mostrarRespuesta()">Enviar</button>
+            
+            <div id="resultado"></div>
+        </form>
+    </section>
+</form>
+  </body>
+</html>
