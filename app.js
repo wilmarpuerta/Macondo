@@ -60,4 +60,14 @@ function mostrarRespuesta() {
 
 //Caso 2
 
+let altoMaleta = Number.parseFloat(prompt("Ingrese un alto de la maleta")) / 55;
+let largoMaleta = Number.parseFloat(prompt("Ingrese un largo de la maleta")) / 40;
+let anchoMaleta = Number.parseFloat(prompt("Ingrese un ancho de la maleta")) / 20;
+let factorReduccion = Math.min(altoMaleta, largoMaleta, anchoMaleta);
+
+let altoOriginal = factorReduccion * (altoMaleta * 55);
+let largoOriginal = factorReduccion * (largoMaleta * 40);
+let anchoOriginal = factorReduccion * (anchoMaleta * 20);
+
+console.log("El tamaño de la maleta con la reducción es alto " + altoOriginal + " largo " + largoOriginal + " ancho " + anchoOriginal);
 
