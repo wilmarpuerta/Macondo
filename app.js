@@ -71,3 +71,15 @@ let anchoOriginal = factorReduccion * (anchoMaleta * 20);
 
 console.log("El tamaño de la maleta con la reducción es alto " + altoOriginal + " largo " + largoOriginal + " ancho " + anchoOriginal);
 
+//Caso 3
+
+let contrasena = "01110010_01101001_01110111_01101001";
+let array = contrasena.split("_");
+let array2 = [];
+for (let i of array) {
+    let nuevacontra = parseInt(i, 2);
+    array2.push(nuevacontra);
+}
+console.log(array2)
+let caracteres = String.fromCharCode(...array2);
+console.log(caracteres);
