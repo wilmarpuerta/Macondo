@@ -83,3 +83,9 @@ for (let i of array) {
 console.log(array2)
 let caracteres = String.fromCharCode(...array2);
 console.log(caracteres);
+
+//Caso 4
+
+let texto = prompt("Ingrese un texto para convertirlo en lenguaje macondo");
+let textoConvertido = texto.replace(/[aeiouAEIOU]/g, "i");
+console.log(textoConvertido);
