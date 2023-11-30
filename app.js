@@ -89,3 +89,99 @@ console.log(caracteres);
 let texto = prompt("Ingrese un texto para convertirlo en lenguaje macondo");
 let textoConvertido = texto.replace(/[aeiouAEIOU]/g, "i");
 console.log(textoConvertido);
+
+//Caso 5
+
+let taxi = prompt("1. Ingrese 1 para piedra" +
+    "\n2. Ingrese 2 para papel" +
+    "\n3. Ingrese 3 para tijeras ");
+let hildebrando = prompt("1. Ingrese 1 para piedra" +
+    "\n2. Ingrese 2 para papel" +
+    "\n3. Ingrese 3 para tijeras ");
+
+if ((taxi == 1 && hildebrando == 2) || (taxi == 2 && hildebrando == 3) || (taxi == 3 && hildebrando == 1)) {
+    console.log("Hildebrando gana");
+} else if (taxi == hildebrando) {
+    console.log("Hildebrando y el taxista empataron");
+} else {
+    console.log("Hildebrando pierde");
+    nuevoSaldo -= 300000;
+}
+
+//Caso 6
+
+for (i = 0; i < dias; i++) {
+    if (vivo == true) {
+        if(terminanVaca==true){
+            let colores = prompt("1. Ingrese 1 para amarillo" +
+            "\n2. Ingrese 2 para verde" +
+            "\n3. Ingrese 3 para rojo" +
+            "\n4. Ingrese 4 para azul");
+            let piscina;
+            let caminata;
+            let playa;
+            let hotel;
+
+            switch (colores) {
+                case "1":
+                    console.log("Ir a la piscina, el agua huele raro, pero no le pone importancia");
+                    piscina = prompt("¿Desea meterse a la piscina? (N/S)");
+                    if (piscina.toUpperCase() === "S") {
+                        vivo = false
+                        terminanVaca = false
+                        console.log("Si se mete, empieza a sentirse ahogado, demasiado cloro, muere (terminan las vacaciones)");
+                    } else if (piscina.toUpperCase() === "N") {
+                        console.log("No pasa nada");
+                    }
+                    break;
+                case "2":
+                    console.log("Caminatas, y agüita para el camino");
+                    caminata = prompt("¿ir a toda la caminata? (N/S)");
+                    if (caminata.toUpperCase() === "S") {
+                        console.log("ira a una hermosa cascada y se tomara fotos");
+                    } else if (caminata.toUpperCase() === "N") {
+                        console.log("llegará a cierto punto, y se devolverá solo, y de noche se pierde");
+                    }
+                    break;
+                case "3":
+                    console.log("Actividades en la playa");
+                    playa = prompt("1. Ingrese 1 voleibol" +
+                        "\n2. Ingrese 2 nada en el mar, y monta moto" +
+                        "\n3. Ingrese 3 tomar cócteles mientras descansa");
+                    if (playa === "1") {
+                        console.log("Se la pasa genial");
+                    } else if (playa === "2") {
+                        console.log("La pasa bien");
+                    } else if (playa === "3") {
+                        terminanVaca = false
+                        console.log("Siente un fuerte dolor de cabeza y empieza a perder la visión, chirrinchi adulterado, se tiene que devolver de emergencia. (Terminan las vacaciones)");
+                    }
+                    break;
+                case "4":
+                    console.log("Actividades dentro del hotel");
+                    hotel = prompt("1. Ingrese 1 bingo," +
+                        "\n2. Ingrese 2 bailar" +
+                        "\n3. Ingrese 3 casino y apuesta");
+
+                    if (hotel === "1") {
+                        console.log("Gana y aumenta su dinero");
+                    } else if (hotel === "2") {
+                        console.log("La pasa muy bien");
+                    } else if (hotel === "3") {
+                        terminanVaca = false
+                        console.log("Solo se queda con pasaje de regreso (Terminan las vacaciones)");
+                    }
+                    break;
+                default:
+                    console.log("Opción no válida");
+        }
+        contadorVaca++;
+        }else{
+            contador
+
+    }
+        }
+        contadorVivo++;
+
+        
+    }
